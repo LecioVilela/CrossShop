@@ -4,10 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using CrossShop.Services.Orders.Core.Entities;
 using CrossShop.Services.Orders.Core.ValueObjects;
+using MediatR;
 
 namespace CrossShop.Services.Orders.Application.Commands
 {
-    public class AddOrder
+    public class AddOrder : IRequest<Guid>
     {
         public CustomerInputModel Customer { get; set; }
         public List<OrderItemInputModel> Items { get; set; }
