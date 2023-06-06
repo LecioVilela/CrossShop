@@ -1,4 +1,6 @@
 using CrossShop.Services.Orders.Application;
+using CrossShop.Services.Orders.Infrastructure;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +13,8 @@ builder.Services.AddSwaggerGen();
 
 // Call AddHandlers() method to register MediatR handlers
 builder.Services.AddHandlers();
+builder.Services.AddMongo();
+builder.Services.AddRepositories();
 
 var app = builder.Build();
 

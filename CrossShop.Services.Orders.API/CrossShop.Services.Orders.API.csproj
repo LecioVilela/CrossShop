@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CrossShop.Services.Orders.Application\CrossShop.Services.Orders.Application.csproj" />
+    <ProjectReference Include="..\CrossShop.Services.Orders.Infrastructure\CrossShop.Services.Orders.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
